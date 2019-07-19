@@ -1,8 +1,9 @@
 article:nth-of-type(1) {
-    padding: 120px 20px 20px 20px;
+    padding: 140px 20px 20px 20px;
     position: relative;
     background-image:url('assets/group4.jpg');
     background-size: cover;
+    background-origin: border-box;
     .wrapper {
         flex-direction: column;
     }
@@ -35,7 +36,7 @@ article:nth-of-type(1) {
         max-width: 523px; 
     }
     .scroll-down {
-        margin-top: 120px;
+        margin-top: 100px;
         align-self: center;
         span {
             font-weight: 300;

@@ -1,3 +1,4 @@
+@import "colors";
 * {
     margin: 0;
     margin-block-start: 0;
@@ -23,4 +24,24 @@ h1, h2, p, span, div{
     max-width:  1155px;
     width: 100%;
     display: flex;
+}
+article {
+    padding: 0 20px;
+}
+.button {
+     width: 200px;
+     height: 45px;
+     border-radius: 27.5px;
+     display: flex;
+     flex-direction: row;
+     justify-content:center;
+     align-items: center;
+     background-color: $gray;
+     span {
+         font-size: 14px;
+         line-height: 1.25;
+         font-weight: bold;
+         color: $yellow;
+         margin-right: 8px;
+     }
 }
