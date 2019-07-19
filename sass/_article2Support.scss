@@ -10,6 +10,8 @@ article:nth-of-type(2) {
         .support-info {
             background-color: $yellow;
             max-width: 676px;
+            max-height: 390px;
+            width: 100%;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
