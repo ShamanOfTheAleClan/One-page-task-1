@@ -3,7 +3,12 @@ header {
     display: flex;
     align-items: center;
     padding: 20px;
-    position: relative;
+    position: fixed;
+    top: 0;
+    background-color: #00000000;
+    z-index: 5;
+    width: 100vw;
+    box-sizing: border-box;
     .wrapper {
         display: flex;
         flex-direction: row;
@@ -68,10 +73,11 @@ header {
     }
     .menu-wrap {
         position: absolute;
-        z-index: 1;
+        z-index: 3;
         background-color: $gray;
         padding: 20px 30px;
         left: 0;
+        top: 0;
         transform:translateY(-120vh);
         transition: 0.5s ease-in-out;
         ul {

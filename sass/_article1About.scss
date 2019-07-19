@@ -1,0 +1,56 @@
+article:nth-of-type(1) {
+    padding: 120px 20px 20px 20px;
+    position: relative;
+    background-image:url('assets/group4.jpg');
+    background-size: cover;
+    .wrapper {
+        flex-direction: column;
+    }
+    h2 {
+        font-size:50rem;
+        line-height: 1.7;
+        font-weight: 200;
+        span {
+            font-size: 90rem;
+            line-height: 0.94;
+            position: relative;
+            z-index: 1;
+            &::after {
+                content:"";
+                position:absolute;
+                width: 152px;
+                height: 35px;
+                background-color: $yellow;
+                bottom: -15px;
+                left: -96px;
+                z-index: -1;
+            }
+        }
+    }
+    p {
+        margin-top: 41px;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 1.25;
+        max-width: 523px; 
+    }
+    .scroll-down {
+        margin-top: 120px;
+        align-self: center;
+        span {
+            font-weight: 300;
+            font-size: 10px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            opacity: 0.4;
+        }
+        .arrow-down{
+            margin-top: 13px;
+            display: flex;
+            flex-direction: column;
+            svg {
+                align-self: center;
+            }
+        }
+    }
+}

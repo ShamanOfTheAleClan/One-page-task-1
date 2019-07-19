@@ -7,19 +7,20 @@
     padding-inline-end: 0;
     transition: 0.2s ease-in-out;
 }
+html {
+    font-size: 0.45px;
+    background: #25292D;
+}
 .bold {
-    font-weight: bold;
+    font-weight: 700;
 }
 h1, h2, p, span, div{
     font-family: 'Montserrat';
     color: white;
 }
-body {
-    font-size: 1px;
-    background: #25292D;
-    
-}
+
 .wrapper {
     max-width:  1155px;
     width: 100%;
+    display: flex;
 }

@@ -37,13 +37,17 @@
         <div class="background-image"></div>
         <div class="wrapper">
             <div class="text-wrap">
-                <h2>supporting the <span class="header-bold">Unsupported</span></h2>
+                <h2>supporting the <br><span class="bold">Unsupported</span></h2>
                 <p>The European Endowment for Democracy (EED) is a grant-giving organisation that supports local actors of democratic change in the European Neighbourhood and beyond.</p>
                 <div class="rectangle4"></div>
             </div>
             <div class="scroll-down">
                 <span>scroll down</span>
-                <div class="arrow-down"></div>
+                <div class="arrow-down">
+                    <svg width="23" height="32" viewBox="0 0 23 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path id="Shape" opacity="0.4" d="M22.1691 21.375C22.6103 20.9527 22.6103 20.2498 22.1691 19.8127C21.7429 19.3904 21.0335 19.3904 20.6082 19.8127L12.6128 27.7345L12.6128 1.59371C12.6118 0.984344 12.123 0.5 11.5079 0.5C10.8929 0.5 10.3882 0.984344 10.3882 1.59371L10.3882 27.7345L2.40769 19.8127C1.96653 19.3904 1.25612 19.3904 0.830864 19.8127C0.389711 20.2498 0.389711 20.9537 0.830864 21.375L10.719 31.1722C11.1453 31.6093 11.8547 31.6093 12.28 31.1722L22.1691 21.375Z" fill="white"/>
+                    </svg>
+                </div>
             </div>
         </div>
     </article>
@@ -170,6 +174,8 @@
         </div>
     </footer>
     <script>
+
+        // burger functionality
         let burger = document.querySelector('.burger');
         let menu = document.querySelector('.menu-wrap');
 
@@ -184,6 +190,22 @@
             }
         }
         burger.addEventListener('click', burgerClick);
+
+        // menu background
+
+        let header = document.querySelector("header");
+        let article1 = document.getElementById('about');
+        
+        function menuBackground(){
+            if (article1.getBoundingClientRect().top == 0) {
+                header.style.backgroundColor="#00000000";
+            }
+            else {
+                header.style.backgroundColor="#25292Df0";
+            }
+        }
+        window.addEventListener("scroll", menuBackground);
+
     </script>
 </body>
 </html>
