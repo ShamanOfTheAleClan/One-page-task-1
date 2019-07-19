@@ -8,14 +8,14 @@
     padding-inline-end: 0;
     transition: 0.2s ease-in-out;
 }
-html {
+*:root {
     font-size: 0.45px;
     background: #25292D;
 }
 .bold {
     font-weight: 700;
 }
-h1, h2, p, span, div{
+h1, h2, p, span, div, input{
     font-family: 'Montserrat';
     color: white;
 }
