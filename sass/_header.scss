@@ -9,6 +9,7 @@ header {
     z-index: 5;
     width: 100vw;
     box-sizing: border-box;
+    transition: 0.2s ease-in-out;
     .wrapper {
         display: flex;
         flex-direction: row;
@@ -57,6 +58,11 @@ header {
             bottom: -20px;
             left: -40px;
             
+        }
+    }
+    @media (min-width: 1024px) {
+        .burger {
+            display: none;
         }
     }
     .burger-active {
@@ -108,7 +114,31 @@ header {
             }
         }
     }
+    @media (min-width: 1024px) {
+        .menu-wrap {
+            position: static;
+            transform: none;
+            background-color: inherit;
+            padding: 0;
+            ul {
+                flex-direction: row;
+                height: 100%;
+                a {
+                    margin-right: 30px;
+                }
+                a:last-of-type {
+                    margin-right: 0;
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
     .menu-translated {
         transform:translateY(0px);
+    }
+}
+@media (min-width: 768px) {
+    header {
+        padding: 32px 30px;
     }
 }

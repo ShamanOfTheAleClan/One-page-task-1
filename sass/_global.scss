@@ -6,11 +6,30 @@
     padding:0;
     padding-inline-start: 0;
     padding-inline-end: 0;
-    transition: 0.2s ease-in-out;
 }
 *:root {
     font-size: 0.45px;
     background: #25292D;
+}
+@media(min-width: 375px) {
+    *:root {
+        font-size: 0.5px;
+    }
+}
+@media (min-width: 425px) {
+    *:root {
+        font-size: 0.6px;
+    }
+}
+@media (min-width: 768px) {
+    *:root {
+        font-size: 0.8px;
+    }
+}
+@media (min-width: 1024px) {
+    *:root {
+        font-size: 1px;
+    }
 }
 .bold {
     font-weight: 700;
@@ -24,6 +43,7 @@ h1, h2, p, span, div, input{
     max-width:  1155px;
     width: 100%;
     display: flex;
+    margin: 0 auto;
 }
 article {
     padding: 0 20px;
@@ -44,4 +64,13 @@ article {
          color: $yellow;
          margin-right: 8px;
      }
+}
+@media (min-width: 768px) {
+    .button {
+        width: 230px;
+        height: 55px;
+        span {
+            font-size: 16px;
+        }
+    }
 }
