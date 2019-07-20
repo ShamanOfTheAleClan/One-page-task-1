@@ -249,11 +249,11 @@
         let article1 = document.getElementById('about');
         
         function menuBackground(){
-            if (article1.getBoundingClientRect().top == 0 && screen.width < 640)  {
+            if (article1.getBoundingClientRect().top == 0 && window.innerWidth < 640)  {
                 header.style.backgroundColor="#00000000";
                 header.style.padding="10px 20px";
             }
-            else if (article1.getBoundingClientRect().top == 0 && screen.width > 640){
+            else if (article1.getBoundingClientRect().top == 0 && window.innerWidth > 640){
                 header.style.backgroundColor="#00000000";
                 header.style.padding="32px 30px"
             }

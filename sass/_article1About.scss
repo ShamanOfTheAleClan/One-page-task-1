@@ -74,6 +74,12 @@ article:nth-of-type(1) {
             margin-top: 13px;
             display: flex;
             flex-direction: column;
+            animation-name: pointingDown;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+            animation-play-state: running;
+            animation-direction: alternate-reverse;
+            animation-timing-function: ease-in-out;
             svg {
                 align-self: center;
             }

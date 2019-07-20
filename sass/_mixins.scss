@@ -1,0 +1,12 @@
+@keyframes pointingDown {
+    from {transform:translateY(0);}
+    to {transform:translateY(15px);}
+}
+@keyframes pointingRight {
+    from {
+        transform:translateX(0);
+    }
+    to {
+        transform:translateX(15px);
+    }
+}

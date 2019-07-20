@@ -60,7 +60,15 @@ article:nth-of-type(2) {
     }
     .button {
         margin-top: 38px;
-
+        cursor: pointer;
+        .arrow-right {
+            transition: 0.3s ease-in-out;
+        }
+        &:hover {
+            .arrow-right {
+                transform:translateX(15px);
+            }
+        }
     }
     .support-image {
         background-image: url('assets/Group1.jpg');
