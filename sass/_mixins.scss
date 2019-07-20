@@ -10,3 +10,11 @@
         transform:translateX(15px);
     }
 }
+@keyframes fromLeft {
+    from {
+        transform:translateX(-500px);
+    }
+    to {
+        transform:translateX(0);
+    }
+}
