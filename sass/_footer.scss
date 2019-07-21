@@ -63,6 +63,9 @@ footer {
         flex-direction: row;
         align-items: center;
     }
+    a {
+        margin-right: 15px;
+    }
     .social-media-icon {
         width: 40px;
         height: 40px;
@@ -72,7 +75,7 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-right: 15px;
+        // margin-right: 15px;
         filter: saturate(0) opacity(0.44);
         transition: 0.2s ease-in-out;
         cursor:pointer;
@@ -80,7 +83,7 @@ footer {
             filter: saturate(1) opacity(1);
         }
     }
-    .social-media-icon:last-of-type {
+    a:last-of-type {
         margin-right: 0;
     }
 }
