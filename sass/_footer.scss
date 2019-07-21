@@ -3,6 +3,10 @@ footer {
     box-sizing: border-box;
     padding: 23px 20px;
     margin-top: 90px;
+    animation-name: delayedAppear;
+    animation-duration: 2.5s;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
     .wrapper {
         display: flex;
         justify-content: center;

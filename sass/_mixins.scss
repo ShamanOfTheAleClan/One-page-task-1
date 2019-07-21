@@ -2,19 +2,71 @@
     from {transform:translateY(0);}
     to {transform:translateY(15px);}
 }
-@keyframes pointingRight {
-    from {
-        transform:translateX(0);
+@keyframes fromTop {
+    0% {
+        transform:translateY(-10px);
+        opacity: 0;
+    }
+    80% {
+        transform:translateY(-10px);
+        opacity: 0;
+    }
+    100% {
+        transform:translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes rectangleFromLeft {
+    0% {
+        transform:translateX(-3000px);
+        opacity: 0;
+    }
+    50% {
+        transform:translateX(-3000px);
+        opacity: 0;
     }
     to {
-        transform:translateX(15px);
+        transform:translateX(0);
+        opacity: 1;
     }
 }
 @keyframes fromLeft {
-    from {
+    0% {
         transform:translateX(-500px);
+        opacity: 0;
+    }
+    50% {
+        transform:translateX(-500px);
+        opacity: 0;
     }
     to {
         transform:translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes fromRight {
+    0% {
+        transform:translateX(500px);
+        opacity: 0;
+    }
+    50% {
+        transform:translateX(500px);
+        opacity: 0;
+    }
+    to {
+        transform:translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes delayedAppear {
+    0% {
+        
+        opacity: 0;
+    }
+    75% {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }
