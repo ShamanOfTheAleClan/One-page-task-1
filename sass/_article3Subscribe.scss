@@ -9,10 +9,10 @@ article:nth-of-type(3) {
         justify-content: center;
         align-items: center;
         padding: 75px 0 30px 0;
+        position: relative;
     }
     .email-input {
         width: 100%;
-        max-width: 497px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -21,6 +21,7 @@ article:nth-of-type(3) {
         fieldset {
             width: 100%;
             border: none;
+            max-width: 497px;
             input {
                 font-size: 14px;
                 font-weight: 300;
@@ -47,9 +48,17 @@ article:nth-of-type(3) {
                 display: none;
             }
             @media (min-width: 768px) {
-                input, p {
+                input, p, .error-message {
                     font-size: 20px;
                 }
+            }
+        }
+    }
+    @media (min-width: 640px) {
+        .email-input {
+            flex-direction: row;
+            #submitButton {
+                margin-left: 30px;
             }
         }
     }
@@ -78,6 +87,48 @@ article:nth-of-type(3) {
         background-color: $gray;
         margin-top: 5px;
     }
-    
-
+    .success-message {
+        opacity: 1;
+        pointer-events: all;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 3.5;
+        color: #2D2525;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .checkmark {
+            width: 28px;
+            height: 28px;
+            border: 3px solid black;
+            border-radius: 50%;
+            background-image:url('assets/checkmark.svg');
+            background-repeat: no-repeat;
+            background-size: 18px;
+            background-position: center;
+            flex-shrink: 1;
+            margin-right: 12px;
+        }
+        p {
+            font-size: 20rem;
+            color: #2D2525;
+        }
+    }
+    .error-message {
+        display: block;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 1;
+        color: #2D2525;
+        text-align: left;
+        margin-top: 11px;
+    }    
+    .hidden {
+        opacity: 0;
+        pointer-events: none;
+    }
+    .disabled {
+        display: none;
+    }
 }
